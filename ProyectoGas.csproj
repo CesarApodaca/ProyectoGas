@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C57CB785-6418-4CF2-9EC5-2B303D7BBE19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoGas</RootNamespace>
+    <AssemblyName>ProyectoGas</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Mis Cosas\Compras\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Vistas\AsignarChofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AsignarChofer.Designer.cs">
+      <DependentUpon>AsignarChofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\AsignarDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\AsignarDispositivo.Designer.cs">
+      <DependentUpon>AsignarDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\BusquedaSerie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\BusquedaSerie.Designer.cs">
+      <DependentUpon>BusquedaSerie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Chofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Chofer.Designer.cs">
+      <DependentUpon>Chofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DesasignarDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DesasignarDispositivo.Designer.cs">
+      <DependentUpon>DesasignarDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Dispositivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Dispositivos.Designer.cs">
+      <DependentUpon>Dispositivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\InterfazPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\InterfazPrincipal.Designer.cs">
+      <DependentUpon>InterfazPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\InterfazPrincipal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\InterfazPrincipal2.Designer.cs">
+      <DependentUpon>InterfazPrincipal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\InterfazPrincipal3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\InterfazPrincipal3.Designer.cs">
+      <DependentUpon>InterfazPrincipal3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\Pipas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Pipas.Designer.cs">
+      <DependentUpon>Pipas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Tanques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Tanques.Designer.cs">
+      <DependentUpon>Tanques.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\AsignarChofer.resx">
+      <DependentUpon>AsignarChofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\AsignarDispositivo.resx">
+      <DependentUpon>AsignarDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\BusquedaSerie.resx">
+      <DependentUpon>BusquedaSerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Chofer.resx">
+      <DependentUpon>Chofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DesasignarDispositivo.resx">
+      <DependentUpon>DesasignarDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Dispositivos.resx">
+      <DependentUpon>Dispositivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\InterfazPrincipal.resx">
+      <DependentUpon>InterfazPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\InterfazPrincipal2.resx">
+      <DependentUpon>InterfazPrincipal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\InterfazPrincipal3.resx">
+      <DependentUpon>InterfazPrincipal3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\Pipas.resx">
+      <DependentUpon>Pipas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Tanques.resx">
+      <DependentUpon>Tanques.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modelo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
